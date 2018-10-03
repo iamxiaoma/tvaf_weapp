@@ -1,12 +1,37 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/member/member",
+    "pages/login/login",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "tvaf_weapp",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "color": "#f012ba",
+    "selectedColor": "#8babca",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "",
+        "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/member/member",
+        "text": "我的",
+        "iconPath": "",
+        "selectedIconPath": ""
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
